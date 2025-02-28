@@ -28,3 +28,73 @@ body {
   font-size: 18px;
   color: #e5e7eb;
 }
+
+/* Header */
+header {
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+nav a {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* Call to Action Button */
+.button {
+  background-color: #3882f6;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #2a6acb;
+}
+
+/* Information Section */
+.info-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+/*Quote Section */
+.quote-section {
+  background-color: #e5e7eb;
+  padding: 40px;
+  text-align: center;
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
