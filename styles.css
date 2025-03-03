@@ -1,10 +1,12 @@
 /* General styles */
 body {
   font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
+  background-color: #1e293b;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Header styles */
@@ -12,14 +14,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f2937;
-  padding: 20px;
+  background-color: #1f293b;
+  padding: 20px 50px;
   color: white;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .nav-links {
@@ -27,14 +24,17 @@ header {
   gap: 20px;
 }
 
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Hero section styles */
 .hero {
-  background-color: #1f2937;
-  color: white;
-  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .hero-text {
@@ -42,49 +42,62 @@ header {
 }
 
 .hero-text h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin: 0;
 }
 
 .hero-text p {
-  font-size: 18px;
-  color: #d1d5db;
+  font-size: 1rem;
+  color: #b0b0b0;
 }
 
-.hero img {
+.signup-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3b82f6; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-button:hover {
+  background-color: #2563eb; /* Darker blue */
+}
+
+.hero-image {
   width: 40%;
-  background-color: #cfcfcf;
+  background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
-}
-
-/* button styles */
-button {
-  background-color: #2563eb;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #2563eb;
-}
-
-/* Information Section styles */
-.info-section {
   text-align: center;
   padding: 50px;
 }
 
+/*Section: Random Information */
+
+.random-info {
+  text-align: center;
+  padding: 50px;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.random-info h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .info-container {
   display: flex;
-  gap: 50px;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -92,12 +105,18 @@ button:hover {
   width: 150px;
   height: 150px;
   border: 2px solid #3b82f6;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border-radius: 5px;
-  padding: 10px;
+}
+
+.info-text {
+  width: 150px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #333;
 }
 
 /* Quote Section */
